@@ -1,0 +1,40 @@
+.header {
+    background-color: rgb(107, 12, 171);
+    color: rgb(9, 121, 173);
+    margin-bottom: 15px;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    font-family: 'Baloo 2', cursive;
+    justify-content: space-between;
+   }
+   
+body {
+       background-color: rgb(26, 73, 175);
+       margin: 0;
+       padding: 0;
+   }
+
+.wrapper,.container {
+    display: flex;
+    flex: 0 1 auto;
+}
+
+.wrapper{
+   align-items: center;
+}
+
+.container {
+   flex-direction: row;
+   flex-wrap: wrap;
+   align-items: flex-start;
+   justify-content: space-between;
+}
+
+@media screen and (min-width: 550px) {
+    .container {
+        justify-content: center;
+    }
+}

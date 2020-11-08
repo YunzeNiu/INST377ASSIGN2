@@ -1,4 +1,3 @@
-
 const matches = document.getElementsByClassName('filtered-list')[0];
 const input = document.getElementById("textinput");
 //let inputvalue=

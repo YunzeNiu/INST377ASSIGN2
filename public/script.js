@@ -34,15 +34,21 @@ function display(place) {
 matches.innerHTML = htmlString;  
 };
 
-
 input.addEventListener("keyup", (e) => {
         const searchString = e.target.value.toLowerCase();
+
         const filteredmatches = returnlist.filter(_restaurants => {
             return (
                 _restaurants.category.toLowerCase().includes(searchString)
             );
         });
-        display(filteredmatches);
+
+        if (!searchString.length) {
+            display([]);
+        } else {
+            display(filteredmatches);
+        }
+
         console.log(filteredmatches)
 
     });

@@ -1,6 +1,4 @@
 .header {
-    background-color: rgb(107, 12, 171);
-    color: rgb(9, 121, 173);
     margin-bottom: 15px;
     padding: 15px;
     display: flex;
@@ -10,6 +8,7 @@
     font-family: 'Baloo 2', cursive;
     justify-content: space-between;
    }
+
    
 body {
        background-color: rgb(26, 73, 175);
@@ -17,24 +16,26 @@ body {
        padding: 0;
    }
 
-.wrapper,.container {
+h1 {
+    color: rgb(82, 215, 224);
+   }
+
+.restaurant li {
     display: flex;
     flex: 0 1 auto;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    max-width: 800px;
+    padding: 0px 16px;
+    background-color: rgb(121, 70, 128);
 }
 
-.wrapper{
-   align-items: center;
-}
 
-.container {
-   flex-direction: row;
-   flex-wrap: wrap;
-   align-items: flex-start;
-   justify-content: space-between;
-}
-
-@media screen and (min-width: 550px) {
-    .container {
-        justify-content: center;
+@media screen and (max-width: 550px) {
+    .restaurant li {
+        max-width: 550px;
     }
 }

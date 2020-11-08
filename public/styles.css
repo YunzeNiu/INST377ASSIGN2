@@ -30,6 +30,9 @@ h1 {
 }
 
 @media screen and (max-width: 550px) {
+    .textinput {
+        width: 45%;
+    }
     .restaurant li {
         max-width: 550px;
     }

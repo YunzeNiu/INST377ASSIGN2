@@ -1,4 +1,4 @@
-.header {
+/* .header {
     margin-bottom: 15px;
     padding: 15px;
     display: flex;
@@ -7,27 +7,36 @@
     align-items: center;
     font-family: 'Baloo 2', cursive;
     justify-content: space-between;
-   }
+   } */
 
 body {
-       background-color: rgb(31, 207, 163);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: left;
+    
+       background-color: rgb(53, 224, 182);
        padding: 0;
        font-family: 'Baloo 2', cursive;
-       margin-left: 10px;
+       margin-left: 7%;
    }
 
 h1 {
-    color: rgb(82, 215, 224);
+    color: rgb(18, 66, 128);
    }
 
-.restaurant li {
+.restaurant{
     flex: 0 1 auto;
     border-radius: 4px;
     max-width: 800px;
     margin: 0px;
     padding: 9px;
-    background: linear-gradient(#ad2424 40%, #242d8f 90%);
+    background: linear-gradient(#658eda, #da91ec);
 }
+.textinput {
+    width: 800px;
+}
+
 
 @media screen and (max-width: 550px) {
     .textinput {
